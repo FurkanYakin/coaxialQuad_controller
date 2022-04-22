@@ -15,34 +15,18 @@ Izz=1;
 Ax=0;
 Ay=0;           %Air drag coeff in each axis
 
-K_emf=1;            %motor coefficent (Vs/rad)
-J=1;                %Motor mass moment of inertia (kgm^2)
-b_m=1;              %Motor damping coefficient (Nms)
-Kt=1;               %Motor torque coefficient (Nm/A)
-R=1;                %Motor rotor resistance (ohm)
-L=1;                %Motor rotor inductance (H)
-omega_max=500;      %motor max limit
-omega_min=0;        %motor min limit
+K_emf=1;        %motor coefficent (Vs/rad)
+J=1;            %Motor mass moment of inertia (kgm^2)
+b_m=1;          %Motor damping coefficient (Nms)
+Kt=1;           %Motor torque coefficient (Nm/A)
+R=1;            %Motor rotor resistance (ohm)
+L=1;            %Motor rotor inductance (H)
+omega_max=inf;  %motor max limit
+omega_min=0;    %motor min limit
 
 V=1;            %Battary Voltage
 Ah=1;           %Battary capacity
 C=1;            %Battary C rate
-%%----Matrixes----
-I =[Ixx,0,0;
-    0,Iyy,0;
-    0,0,Izz];
-
-thrust_matrix=[0,0,0,0;
-               0,0,0,0;
-               b,b,b,b];
-
-moment_matrix=[0,l*b,0,-l*b;
-               -l*b,0,l*b,0;
-               -d,d,-d,d];
-
-gyro_matrix=[1,-1,1,-1;
-             -1,1,-1,1;
-              0,0,0,0].*(J*pi/30);
 
 %% Velocity input
 
