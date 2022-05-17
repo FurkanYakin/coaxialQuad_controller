@@ -7,6 +7,8 @@ b=1.869E-7;         %Thrust coefficent
 d=1.706E-8;         %Drug coefficent
 m=3.1;            %Mass (kg)
 l=0.1;             %Arm length (meter)
+g=9.81;
+
 
 Ixx=0.182;
 Iyy=0.188;              %Inertia moments (kgm^2)
@@ -41,9 +43,9 @@ theta_P = 2;
 theta_I = 2;
 theta_D = 0.1;
 
-psi_P = 0.1;
-psi_I = 0.1;
-psi_D = 0;
+psi_P = 10;
+psi_I = 10;
+psi_D = 10;
 
 %% Velocity input
 
