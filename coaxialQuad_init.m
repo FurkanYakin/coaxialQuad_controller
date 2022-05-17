@@ -24,14 +24,14 @@ L=1.17e-4;          %Motor rotor inductance (H)
 omega_max=inf;      %motor max limit
 omega_min=0;        %motor min limit
 
-V=11.1;             %Battary Voltage
-Ah=0.7;             %Battary capacity
-C=60;               %Battary C rate
+V=16.8;             %Battary Voltage
+Ah=5,8;             %Battary capacity
+C=45;               %Battary C rate
 
 %% PID Values
-Z_P = 5.8;
-Z_I = 0.5;
-Z_D = 2;
+Z_P = 10;
+Z_I = 5;
+Z_D = 10;
 
 phi_P = 2;
 phi_I = 2;
