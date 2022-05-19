@@ -2,11 +2,11 @@
 %Quadcopter simulation variables
 
 %% Constants
-
-b=1.869E-7;         %Thrust coefficent
-d=1.706E-8;         %Drug coefficent
+clc;clear;
+b=1.869E-6;         %Thrust coefficent
+d=1.706E-7;         %Drug coefficent
 m=3.1;            %Mass (kg)
-l=0.1;             %Arm length (meter)
+l=0.3;             %Arm length (meter)
 g=9.81;
 
 
@@ -26,8 +26,10 @@ L=1.17e-4;          %Motor rotor inductance (H)
 omega_max=inf;      %motor max limit
 omega_min=0;        %motor min limit
 
+K_m=0.1;            %Rpm to Voltage
+
 V=16.8;             %Battary Voltage
-Ah=5,8;             %Battary capacity
+Ah=5.8;             %Battary capacity
 C=45;               %Battary C rate
 
 %% PID Values
@@ -35,21 +37,21 @@ Z_P = 10;
 Z_I = 5;
 Z_D = 10;
 
-phi_P = 2;
-phi_I = 2;
-phi_D = 0.1;
+phi_P = 20;
+phi_I = 5;
+phi_D = 10;
 
-theta_P = 2;
-theta_I = 2;
-theta_D = 0.1;
+theta_P = 20;
+theta_I = 5;
+theta_D = 10;
 
 psi_P = 10;
-psi_I = 10;
+psi_I = 5;
 psi_D = 10;
 
 %% Velocity input
 
-omega=[200,200,200,100,200,200,200,100];
+%omega=[200,200,200,100,200,200,200,100];
 
 run coaxialQuad_model.slx
 %sim("quadcopter_sim")
