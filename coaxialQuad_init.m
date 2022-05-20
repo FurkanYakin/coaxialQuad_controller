@@ -5,13 +5,13 @@
 clc;clear;
 b=1.869E-6;         %Thrust coefficent
 d=1.706E-7;         %Drug coefficent
-m=3.1;            %Mass (kg)
-l=0.3;             %Arm length (meter)
+m=3.1;              %Mass (kg)
+l=0.3;              %Arm length (meter)
 g=9.81;
 
 
 Ixx=0.182;
-Iyy=0.188;              %Inertia moments (kgm^2)
+Iyy=0.188;          %Inertia moments (kgm^2)
 Izz=0.335;
 
 Ax=0;
@@ -28,7 +28,7 @@ omega_min=0;        %motor min limit
 
 K_m=0.1;            %Rpm to Voltage
 
-V=16.8;             %Battary Voltage
+V=14.8;             %Battary Voltage
 Ah=5.8;             %Battary capacity
 C=45;               %Battary C rate
 
